@@ -1,0 +1,27 @@
+---
+- name: Install Ubuntu Software Settings
+  become: true
+  action: apt pkg={{item}} state=present
+  with_items:
+    - software-properties-common
+    - python3-apt
+
+- name: Add certbot repository
+  become: true
+  apt_repository:
+    repo: ppa:certbot/certbot
+    state: present
+
+- name: Install certbot
+  become: true
+  action: apt pkg={{item}} state=present
+  with_items:
+    - certbot
+    - python-certbot
+
+- name: Configure Lets Encrypt renew cron job
+  become: true
+  cron:
+    name: Renew Lets Encrypt certificates
+    weekday: 0
+    job: certbot renew
