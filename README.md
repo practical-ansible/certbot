@@ -1,6 +1,6 @@
 # Practical Ansible Certbot
 
-[![CircleCI](https://img.shields.io/circleci/project/github/practical-ansible/certbot.svg)](https://circleci.com/gh/practical-ansible/nginx-node)
+[![CircleCI](https://img.shields.io/circleci/project/github/practical-ansible/certbot.svg)](https://circleci.com/gh/practical-ansible/certbot)
 [![Quality](https://img.shields.io/ansible/quality/21423.svg)](https://galaxy.ansible.com/practical-ansible/certbot)
 [![Downloads](https://img.shields.io/ansible/role/d/21423.svg)](https://galaxy.ansible.com/practical-ansible/certbot)
 
